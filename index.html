@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Conectando o Campo e a Cidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-container"></div>
+
+    <header>
+        <div class="logo-area">
+            <i class="fa-solid fa-seedling logo-icon"></i>
+            <h1>Projeto Agrinho</h1>
+        </div>
+        <p class="subtitle">Sustentabilidade, Tecnologia e Inovação no Campo</p>
+    </header>
+
+    <main class="container">
+        <section class="card intro-card">
+            <h2><i class="fa-solid fa-graduation-cap"></i> O que é o Agrinho?</h2>
+            <p>O Programa Agrinho é o maior programa de responsabilidade social do Sistema FAEP, levando informação, cidadania e consciência ecológica para milhares de crianças e jovens. Juntos, transformamos o futuro através da educação e do respeito à nossa terra!</p>
+        </section>
+
+        <div class="grid-container">
+            <div class="card feature-card" onclick="mostrarDetalhes('sustentabilidade')">
+                <div class="icon-wrapper green"><i class="fa-solid fa-leaf"></i></div>
+                <h3>Sustentabilidade</h3>
+                <p>Práticas inteligentes para proteger o solo, a água e preservar a nossa rica biodiversidade.</p>
+                <span class="btn-more">Saber mais +</span>
+            </div>
+
+            <div class="card feature-card" onclick="mostrarDetalhes('tecnologia')">
+                <div class="icon-wrapper orange"><i class="fa-solid fa-tractor"></i></div>
+                <h3>Tecnologia no Campo</h3>
+                <p>Drones, sensores e automação que ajudam a produzir alimentos de forma mais eficiente.</p>
+                <span class="btn-more">Saber mais +</span>
+            </div>
+
+            <div class="card feature-card" onclick="mostrarDetalhes('cidadania')">
+                <div class="icon-wrapper blue"><i class="fa-solid fa-users"></i></div>
+                <h3>Cidadania</h3>
+                <p>Construindo uma sociedade mais justa, consciente de seus direitos e deveres desde a escola.</p>
+                <span class="btn-more">Saber mais +</span>
+            </div>
+        </div>
+
+        <section class="card interactive-card">
+            <h2><i class="fa-solid fa-gamepad"></i> Quiz Rápido da Natureza!</h2>
+            <p id="quiz-question">O que ajuda a economizar água na irrigação das plantações?</p>
+            <div class="quiz-options">
+                <button class="btn-quiz" onclick="responderQuiz(false)">Regar ao meio-dia sob o sol forte</button>
+                <button class="btn-quiz" onclick="responderQuiz(true)">Usar sistema de gotejamento direto na raiz</button>
+            </div>
+            <p id="quiz-feedback" class="quiz-feedback"></p>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal()">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Projeto Escolar Agrinho. Desenvolvido com <i class="fa-solid fa-heart" style="color: #ff6b6b;"></i> para um futuro melhor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
